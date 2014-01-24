@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E6C959189200B600402086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E6C958189200B600402086 /* Foundation.framework */; };
+		18E6C95B189200B600402086 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E6C95A189200B600402086 /* CoreGraphics.framework */; };
+		18E6C95D189200B600402086 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E6C95C189200B600402086 /* UIKit.framework */; };
+		18E6C963189200B600402086 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E6C961189200B600402086 /* InfoPlist.strings */; };
+		18E6C965189200B600402086 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6C964189200B600402086 /* main.m */; };
+		18E6C969189200B600402086 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6C968189200B600402086 /* AppDelegate.m */; };
+		18E6C96C189200B600402086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6C96A189200B600402086 /* Main.storyboard */; };
+		18E6C96F189200B600402086 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6C96E189200B600402086 /* ViewController.m */; };
+		18E6C971189200B600402086 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E6C970189200B600402086 /* Images.xcassets */; };
+		18E6C978189200B700402086 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E6C977189200B700402086 /* XCTest.framework */; };
+		18E6C979189200B700402086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E6C958189200B600402086 /* Foundation.framework */; };
+		18E6C97A189200B700402086 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E6C95C189200B600402086 /* UIKit.framework */; };
+		18E6C982189200B700402086 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E6C980189200B700402086 /* InfoPlist.strings */; };
+		18E6C984189200B700402086 /* Wild_KingdomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6C983189200B700402086 /* Wild_KingdomTests.m */; };
+		18E6C9911892017C00402086 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6C98E1892017C00402086 /* Flickr.m */; };
+		18E6C9921892017C00402086 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6C9901892017C00402086 /* FlickrPhoto.m */; };
+		18E6C9951892E6CF00402086 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6C9941892E6CF00402086 /* FlickrPhotoCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E6C97B189200B700402086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E6C94D189200B600402086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E6C954189200B600402086;
+			remoteInfo = "Wild Kingdom";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18E6C955189200B600402086 /* Wild Kingdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wild Kingdom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6C958189200B600402086 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18E6C95A189200B600402086 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18E6C95C189200B600402086 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18E6C960189200B600402086 /* Wild Kingdom-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wild Kingdom-Info.plist"; sourceTree = "<group>"; };
+		18E6C962189200B600402086 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18E6C964189200B600402086 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18E6C966189200B600402086 /* Wild Kingdom-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wild Kingdom-Prefix.pch"; sourceTree = "<group>"; };
+		18E6C967189200B600402086 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E6C968189200B600402086 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E6C96B189200B600402086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E6C96D189200B600402086 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18E6C96E189200B600402086 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18E6C970189200B600402086 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18E6C976189200B700402086 /* Wild KingdomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wild KingdomTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6C977189200B700402086 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18E6C97F189200B700402086 /* Wild KingdomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wild KingdomTests-Info.plist"; sourceTree = "<group>"; };
+		18E6C981189200B700402086 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18E6C983189200B700402086 /* Wild_KingdomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wild_KingdomTests.m; sourceTree = "<group>"; };
+		18E6C98D1892017C00402086 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
+		18E6C98E1892017C00402086 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
+		18E6C98F1892017C00402086 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
+		18E6C9901892017C00402086 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
+		18E6C9931892E6CF00402086 /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
+		18E6C9941892E6CF00402086 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E6C952189200B600402086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6C95B189200B600402086 /* CoreGraphics.framework in Frameworks */,
+				18E6C95D189200B600402086 /* UIKit.framework in Frameworks */,
+				18E6C959189200B600402086 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6C973189200B700402086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6C978189200B700402086 /* XCTest.framework in Frameworks */,
+				18E6C97A189200B700402086 /* UIKit.framework in Frameworks */,
+				18E6C979189200B700402086 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E6C94C189200B600402086 = {
+			isa = PBXGroup;
+			children = (
+				18E6C95E189200B600402086 /* Wild Kingdom */,
+				18E6C97D189200B700402086 /* Wild KingdomTests */,
+				18E6C957189200B600402086 /* Frameworks */,
+				18E6C956189200B600402086 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E6C956189200B600402086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E6C955189200B600402086 /* Wild Kingdom.app */,
+				18E6C976189200B700402086 /* Wild KingdomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E6C957189200B600402086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E6C958189200B600402086 /* Foundation.framework */,
+				18E6C95A189200B600402086 /* CoreGraphics.framework */,
+				18E6C95C189200B600402086 /* UIKit.framework */,
+				18E6C977189200B700402086 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18E6C95E189200B600402086 /* Wild Kingdom */ = {
+			isa = PBXGroup;
+			children = (
+				18E6C967189200B600402086 /* AppDelegate.h */,
+				18E6C968189200B600402086 /* AppDelegate.m */,
+				18E6C96A189200B600402086 /* Main.storyboard */,
+				18E6C96D189200B600402086 /* ViewController.h */,
+				18E6C96E189200B600402086 /* ViewController.m */,
+				18E6C9931892E6CF00402086 /* FlickrPhotoCell.h */,
+				18E6C9941892E6CF00402086 /* FlickrPhotoCell.m */,
+				18E6C98D1892017C00402086 /* Flickr.h */,
+				18E6C98E1892017C00402086 /* Flickr.m */,
+				18E6C98F1892017C00402086 /* FlickrPhoto.h */,
+				18E6C9901892017C00402086 /* FlickrPhoto.m */,
+				18E6C970189200B600402086 /* Images.xcassets */,
+				18E6C95F189200B600402086 /* Supporting Files */,
+			);
+			path = "Wild Kingdom";
+			sourceTree = "<group>";
+		};
+		18E6C95F189200B600402086 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E6C960189200B600402086 /* Wild Kingdom-Info.plist */,
+				18E6C961189200B600402086 /* InfoPlist.strings */,
+				18E6C964189200B600402086 /* main.m */,
+				18E6C966189200B600402086 /* Wild Kingdom-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E6C97D189200B700402086 /* Wild KingdomTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E6C983189200B700402086 /* Wild_KingdomTests.m */,
+				18E6C97E189200B700402086 /* Supporting Files */,
+			);
+			path = "Wild KingdomTests";
+			sourceTree = "<group>";
+		};
+		18E6C97E189200B700402086 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E6C97F189200B700402086 /* Wild KingdomTests-Info.plist */,
+				18E6C980189200B700402086 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E6C954189200B600402086 /* Wild Kingdom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6C987189200B700402086 /* Build configuration list for PBXNativeTarget "Wild Kingdom" */;
+			buildPhases = (
+				18E6C951189200B600402086 /* Sources */,
+				18E6C952189200B600402086 /* Frameworks */,
+				18E6C953189200B600402086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wild Kingdom";
+			productName = "Wild Kingdom";
+			productReference = 18E6C955189200B600402086 /* Wild Kingdom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E6C975189200B700402086 /* Wild KingdomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E6C98A189200B700402086 /* Build configuration list for PBXNativeTarget "Wild KingdomTests" */;
+			buildPhases = (
+				18E6C972189200B700402086 /* Sources */,
+				18E6C973189200B700402086 /* Frameworks */,
+				18E6C974189200B700402086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E6C97C189200B700402086 /* PBXTargetDependency */,
+			);
+			name = "Wild KingdomTests";
+			productName = "Wild KingdomTests";
+			productReference = 18E6C976189200B700402086 /* Wild KingdomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E6C94D189200B600402086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tablified Solutions";
+				TargetAttributes = {
+					18E6C975189200B700402086 = {
+						TestTargetID = 18E6C954189200B600402086;
+					};
+				};
+			};
+			buildConfigurationList = 18E6C950189200B600402086 /* Build configuration list for PBXProject "Wild Kingdom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E6C94C189200B600402086;
+			productRefGroup = 18E6C956189200B600402086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E6C954189200B600402086 /* Wild Kingdom */,
+				18E6C975189200B700402086 /* Wild KingdomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E6C953189200B600402086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6C971189200B600402086 /* Images.xcassets in Resources */,
+				18E6C963189200B600402086 /* InfoPlist.strings in Resources */,
+				18E6C96C189200B600402086 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6C974189200B700402086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6C982189200B700402086 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E6C951189200B600402086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6C96F189200B600402086 /* ViewController.m in Sources */,
+				18E6C9951892E6CF00402086 /* FlickrPhotoCell.m in Sources */,
+				18E6C969189200B600402086 /* AppDelegate.m in Sources */,
+				18E6C9911892017C00402086 /* Flickr.m in Sources */,
+				18E6C9921892017C00402086 /* FlickrPhoto.m in Sources */,
+				18E6C965189200B600402086 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E6C972189200B700402086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E6C984189200B700402086 /* Wild_KingdomTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E6C97C189200B700402086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E6C954189200B600402086 /* Wild Kingdom */;
+			targetProxy = 18E6C97B189200B700402086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18E6C961189200B600402086 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E6C962189200B600402086 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18E6C96A189200B600402086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E6C96B189200B600402086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E6C980189200B700402086 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E6C981189200B700402086 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E6C985189200B700402086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18E6C986189200B700402086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E6C988189200B700402086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wild Kingdom/Wild Kingdom-Prefix.pch";
+				INFOPLIST_FILE = "Wild Kingdom/Wild Kingdom-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18E6C989189200B700402086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wild Kingdom/Wild Kingdom-Prefix.pch";
+				INFOPLIST_FILE = "Wild Kingdom/Wild Kingdom-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18E6C98B189200B700402086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wild Kingdom.app/Wild Kingdom";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wild Kingdom/Wild Kingdom-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wild KingdomTests/Wild KingdomTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18E6C98C189200B700402086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wild Kingdom.app/Wild Kingdom";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wild Kingdom/Wild Kingdom-Prefix.pch";
+				INFOPLIST_FILE = "Wild KingdomTests/Wild KingdomTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E6C950189200B600402086 /* Build configuration list for PBXProject "Wild Kingdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6C985189200B700402086 /* Debug */,
+				18E6C986189200B700402086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E6C987189200B700402086 /* Build configuration list for PBXNativeTarget "Wild Kingdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6C988189200B700402086 /* Debug */,
+				18E6C989189200B700402086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18E6C98A189200B700402086 /* Build configuration list for PBXNativeTarget "Wild KingdomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E6C98B189200B700402086 /* Debug */,
+				18E6C98C189200B700402086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E6C94D189200B600402086 /* Project object */;
+}
