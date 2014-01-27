@@ -14,10 +14,10 @@
 @interface ViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
     __weak IBOutlet UITextField *searchTextField;
+    __weak IBOutlet UICollectionView *myCollectionView;
     NSMutableDictionary *searchResults;
     NSMutableArray *searches;
     Flickr *flickr;
-    __weak IBOutlet UICollectionView *myCollectionView;
 }
 
 @end
@@ -28,9 +28,9 @@
 {
     [super viewDidLoad];
     
-    searches = [@[] mutableCopy];
-    searchResults = [@{} mutableCopy];
-    flickr = [[Flickr alloc] init];
+    searches = [NSMutableArray new];  //@[] mutableCopy
+    searchResults = [NSMutableDictionary new]; //@{} mutableCopy
+    flickr = [Flickr new];
     //[myCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"FlickrCell"];
 }
 
@@ -68,8 +68,7 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     FlickrPhotoCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickrCell" forIndexPath:indexPath];
     NSString *searchTerm = searches[indexPath.section];
-    cell.photo = searchResults[searchTerm]
-    [indexPath.row];
+    cell.photo = searchResults[searchTerm][indexPath.row];
     
     return cell;
 }
@@ -89,10 +88,14 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *searchTerm = searches[indexPath.section]; FlickrPhoto *photo = searchResults[searchTerm][indexPath.row];
+    NSString *searchTerm = searches[indexPath.section];
+    FlickrPhoto *photo = searchResults[searchTerm][indexPath.row];
     // 2
     CGSize retval = photo.thumbnail.size.width > 0 ? photo.thumbnail.size : CGSizeMake(100, 100);
-    retval.height += 35; retval.width += 35; return retval;
+    retval.height += 35;
+    retval.width += 35;
+    
+    return retval;
 }
 
 // 3
@@ -100,8 +103,5 @@
 (UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(50, 20, 50, 20);
 }
-
-
-
 
 @end
